@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>eduhelp forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav23">
+        <div class="navbar">
+              
+            <div class="nav-logo border">
+                <div class="logo border"> <img src="reading.png" alt="logo" class="nav-logo"></div>
+
+                <div class="nav-name ">
+                    <p class="add-first"><span class="span1">Edu</span><span class="span2">Ease</span></p>
+                </div> 
+
+            </div>
+
+          
+            <div class="nav-menu" id="nav-menu">
+                
+                <ul class="nav-list" id="nav-list">
+                    
+                    <li  class="nav-item1" id="nav-item1">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li  class="nav-item2" id="nav-item2">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+
+                   
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav-action">
+                <div class="nav-login">
+                    <i class="fa-solid fa-circle-user nav-login"  id="login-btn"></i>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+        </div>
+
+        
+             
+    </header>
+
+    <div class="login" id="login">
+        <form action="#" class=" form login-form" id="LoginForm">
+            <h2 class="login-title">Log In</h2>
+
+            <div class="login-group">
+                <div>
+                    <label for="email" class="login-lable">Email</label>
+                    <input type="email" placeholder="write your email" id="email" class="login-input">
+                </div>
+
+                <div>
+                    <label for="password" class="login-lable">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login-input" >
+                </div>
+            </div>
+            <div class="input-box">
+                <img src="hidden.png" alt="eyeicon" id="eyeicon">
+            </div>
+
+            <div>
+                <button type="submit" class="login-button" id="logInButton">Log In</button>
+               
+
+                <a href="#" class="login-forgot">
+                    Forgot  password?
+                </a>
+
+                <p class="login-signup">
+                    You do not have an account? <a href="#" class="signup-link">Sign up</a>
+                </p>
+            </div>
+        </form>
+
+        <i class="fa-solid fa-xmark login-close" id="login-close"></i>
+
+    </div>
+
+    
+    <div class="login1" id="login1">
+        <form action="#" class=" form signup-form" id="SignupForm">
+            <h2 class="signup-title">Sign up</h2>
+
+            <div class="signup-group">
+                <div>
+                    <label for="email" class="signup-lable">Email</label>
+                    <input type="email1" placeholder="write your email" id="email1" class="login-input">
+                </div>
+
+                <div>
+                    <label for="password1" class="signup-lable">Password</label>
+                    <input type="password1" placeholder="Create password" id="password1" class="signup-input" >
+                </div>
+
+                <div>
+                    <label for="password" class="signup-lable">Re-enter Password</label>
+                    <input type="password2" placeholder="Confirm Password" id="password2" class="signup-input" >
+                </div>
+            </div>
+            <div class="input-box">
+                <img src="hidden.png" alt="eyeicon" id="eyeicon1">
+            </div>
+
+            <div>
+                <button type="submit" class="signup-button" id="signUp">sign up</button>
+
+                <p class="login-signup">
+                    Already have an account? <a href="#" class="login-link">Login</a>
+                </p>
+            </div>
+        </form>
+
+        <i class="fa-solid fa-xmark signup-close" id="signup-close"></i>
+
+    </div>
+
+    <div class="heading" id="heading">
+      <div class="heading1">Edu<span class="span">Ease</span></div>"Where Education Meet Ease.
+      <div class="subheading">Empowering Minds, Inspiring Futures"<br>
+        <br><br>
+        <h7 class="jjj">Register to access>>></h7>
+      </div>
+     
+                           
+    </div>
+
+    <div class="about" id="about">
+        Welcome to EduEase, where learning knows no bounds. 
+
+<br>At EduEase, we believe in the transformative power of education. 
+<br>Our platform is dedicated to providing accessible, engaging, and   
+<br>top-tier educational  resources for  learners of  all  ages and 
+<br>backgrounds. Whether you're a student,a professional seeking new 
+<br> skills, or an enthusiast eager to explore new knowledge, we've 
+<br>curated a diverse array of courses, materials, and toolstailored 
+<br>to meet your learning needs.
+
+    </div>
+
+    <main class="main">
+    <img src="Fh8w39.webp" alt="backgrond" class="main_jpg">
+    </main>
+   
+
+    <script src="main.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyBpp3n1rKQIdZq_oSJl6ZLq1ncMGLKkot0",
+          authDomain: "eduhelpform.firebaseapp.com",
+          projectId: "eduhelpform",
+          storageBucket: "eduhelpform.appspot.com",
+          messagingSenderId: "703671587334",
+          appId: "1:703671587334:web:1f8287d8996022d8dde987",
+          measurementId: "G-9W5X24STG8"
+        }
+      
+     const app = initializeApp(firebaseConfig);
+     const auth = getAuth(app)
+     
+     document.getElementById("signUp").addEventListener("click", function() {
+        var email1 = document.getElementById("email1").value;
+        var password1 = document.getElementById("password1").value;
+
+        createUserWithEmailAndPassword(auth, email1, password1)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            alert("Registration successful!")
+
+        })
+        .catch((error) =>{
+            const errorcode = error.code;
+            const errorMessage = error.message;
+
+            console.log(errorMessage);
+            alert(error);
+        })
+        
+     })
+
+     document.getElementById("logInButton").addEventListener("click", function() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+       signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            alert(user.email +"Login successful!");
+            window.location.assign("section.html")
+
+        })
+        .catch((error) =>{
+            const errorcode = error.code;
+            const errorMessage = error.message;
+
+            console.log(errorMessage);
+            alert(error);
+        })
+        
+     })
+       
+      </script>
+
+      
+</body>
+</html>
